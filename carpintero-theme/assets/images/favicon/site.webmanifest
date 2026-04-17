@@ -1,0 +1,20 @@
+{
+  "name": "Cocinas Tomás",
+  "short_name": "Cocinas Tomás",
+  "description": "Carpintería a medida: cocinas, armarios, baños y otros servicios.",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#1A1A1A",
+  "background_color": "#F5F1EA",
+  "display": "browser"
+}

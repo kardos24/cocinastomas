@@ -1,0 +1,67 @@
+# Formato: ORIGEN | DESTINO | ANCHO | ALTO | CALIDAD(opcional)
+# Rutas absolutas, separador "|".
+# Se hace fit-cover (crop centrado) para encajar en la relación de aspecto.
+
+# =============== HERO (1920x1080, 16:9) ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\hero\cocina3_2.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\hero\hero-1.jpg|1920|1080|85
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\hero\cocina4_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\hero\hero-2.jpg|1920|1080|85
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\hero\cocina13_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\hero\hero-3.jpg|1920|1080|85
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\hero\cocina17_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\hero\hero-4.jpg|1920|1080|85
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\hero\PINO1_PIN_I_EH.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\hero\hero-5.jpg|1920|1080|85
+
+# =============== COCINAS (1200x900, 4:3) ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina1_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\01.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina2_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\02.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina7_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\03.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina11_2.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\04.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina16_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\05.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina20_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\06.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina22_5.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\07.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina23_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\08.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina24_4.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\09.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\PINO4_PIN_I_J_DET4.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\cocinas\10.jpg|1200|900
+
+# =============== ARMARIOS (1200x900, 4:3) ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\armario1_2.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\01.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\armario5_4.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\02.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\IMAG0094.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\03.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\IMAG0223.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\04.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\IMAG0224.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\05.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\IMAG0225.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\06.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\IMAG1799.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\07.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\IMAG1801.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\08.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\IMAG1802.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\09.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\23042007224.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\armarios\10.jpg|1200|900
+
+# =============== BAÑOS (1200x900, 4:3) — usamos todas ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\18102007535.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\01.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\18102007536.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\02.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\19102007560.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\03.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\19122006008.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\04.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\22112007647.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\05.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\27042007231.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\06.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\27042007232.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\07.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\fo 056.JPG|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\08.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\varios 066.JPG|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\09.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\varios 067.JPG|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\banos\10.jpg|1200|900
+
+# =============== MANTENIMIENTO (1200x900, 4:3) — 7 fotos ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\090420081477.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\mantenimiento\01.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\c17.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\mantenimiento\02.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\c18.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\mantenimiento\03.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\c19.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\mantenimiento\04.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\IMAG2063.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\mantenimiento\05.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\IMG-20170927-WA0026.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\mantenimiento\06.jpg|1200|900
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\viaje pirineos 003.JPG|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\mantenimiento\07.jpg|1200|900
+
+# =============== DESTACADAS HOME (800x600, 4:3) ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\cocinas\cocina1_1.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\home\cocina-destacada.jpg|800|600
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\armarios\armario1_2.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\home\armario-destacado.jpg|800|600
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\banos\19122006008.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\home\bano-destacado.jpg|800|600
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\gallery\mantenimiento\c17.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\home\mantenimiento-destacado.jpg|800|600
+
+# =============== BIO (800x1000, 4:5 retrato) ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\bio\IMG-20221109-WA0001.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\bio\carpintero.jpg|800|1000|88
+
+# =============== OG (1200x630) ===============
+C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\og\carpinteros-multiservi-barcelona.jpg|C:\Users\Kardos\Desktop\Trabajo\Paginas web\proyectoPruebaClaude\carpintero-theme\assets\images\optimized\og\og-default.jpg|1200|630|85

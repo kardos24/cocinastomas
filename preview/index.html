@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#1A1A1A">
+    <title>Cocinas Tomás · Carpintería a medida</title>
+    <meta name="description" content="Cocinas, armarios, baños y otros servicios hechos a mano. Carpintería artesanal a medida.">
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Cocinas Tomás · Carpintería a medida">
+    <meta property="og:description" content="Cocinas, armarios, baños y otros servicios hechos a mano.">
+    <meta property="og:image" content="../carpintero-theme/assets/images/optimized/og/og-default.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="icon" type="image/x-icon" href="../carpintero-theme/assets/images/favicon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../carpintero-theme/assets/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../carpintero-theme/assets/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../carpintero-theme/assets/images/favicon/apple-touch-icon.png">
+    <link rel="manifest" href="../carpintero-theme/assets/images/favicon/site.webmanifest">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap">
+
+    <link rel="stylesheet" href="../carpintero-theme/assets/css/main.css">
+    <link rel="stylesheet" href="../carpintero-theme/assets/css/animations.css">
+
+    <script src="config.js"></script>
+    <script src="partials/include.js" defer></script>
+</head>
+<body class="home">
+    <a class="skip-link screen-reader-text" href="#main">Saltar al contenido</a>
+
+    <div data-include="header"></div>
+
+    <main id="main" class="site-main home" role="main">
+        <!-- HERO -->
+        <section class="hero-gallery" aria-label="Galería principal">
+            <div class="hero-slides">
+                <div class="hero-slide is-active" style="background-image:url('../carpintero-theme/assets/images/optimized/hero/hero-1.jpg');"></div>
+                <div class="hero-slide" style="background-image:url('../carpintero-theme/assets/images/optimized/hero/hero-2.jpg');"></div>
+                <div class="hero-slide" style="background-image:url('../carpintero-theme/assets/images/optimized/hero/hero-3.jpg');"></div>
+                <div class="hero-slide" style="background-image:url('../carpintero-theme/assets/images/optimized/hero/hero-4.jpg');"></div>
+                <div class="hero-slide" style="background-image:url('../carpintero-theme/assets/images/optimized/hero/hero-5.jpg');"></div>
+            </div>
+            <div class="hero-content container">
+                <h1 class="hero-title">Carpintería artesanal a medida</h1>
+                <p class="hero-subtitle">Cocinas, armarios, baños y otros servicios. Hechos con oficio, pensados para durar.</p>
+                <a href="#servicios" class="btn btn-primary">Descubre nuestro trabajo</a>
+            </div>
+            <button class="hero-scroll-indicator" aria-label="Bajar a servicios" data-scroll-to="#servicios">
+                <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path fill="currentColor" d="M7 10l5 5 5-5z"/></svg>
+            </button>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section id="servicios" class="home-services">
+            <div class="container">
+                <header class="section-header" data-reveal>
+                    <p class="eyebrow">Qué hacemos</p>
+                    <h2>Servicios</h2>
+                </header>
+                <div class="services-grid">
+                    <a class="service-card" href="cocinas.html" data-reveal>
+                        <div class="service-card-image" style="background-image:url('../carpintero-theme/assets/images/optimized/home/cocina-destacada.jpg');"></div>
+                        <div class="service-card-body">
+                            <h3>Cocinas</h3>
+                            <p>Diseño, fabricación e instalación de cocinas a medida.</p>
+                            <span class="service-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </a>
+                    <a class="service-card" href="armarios.html" data-reveal>
+                        <div class="service-card-image" style="background-image:url('../carpintero-theme/assets/images/optimized/home/armario-destacado.jpg');"></div>
+                        <div class="service-card-body">
+                            <h3>Armarios</h3>
+                            <p>Empotrados, vestidores y correderas al milímetro.</p>
+                            <span class="service-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </a>
+                    <a class="service-card" href="banos.html" data-reveal>
+                        <div class="service-card-image" style="background-image:url('../carpintero-theme/assets/images/optimized/home/bano-destacado.jpg');"></div>
+                        <div class="service-card-body">
+                            <h3>Baños</h3>
+                            <p>Muebles de baño resistentes y elegantes.</p>
+                            <span class="service-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </a>
+                    <a class="service-card" href="otros-servicios.html" data-reveal>
+                        <div class="service-card-image" style="background-image:url('../carpintero-theme/assets/images/optimized/home/mantenimiento-destacado.jpg');"></div>
+                        <div class="service-card-body">
+                            <h3>Otros servicios</h3>
+                            <p>Reparación, restauración, ajustes y más.</p>
+                            <span class="service-card-arrow" aria-hidden="true">&rarr;</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- BIO -->
+        <section id="sobre-mi" class="home-bio">
+            <div class="container bio-grid" data-reveal>
+                <div class="bio-image">
+                    <img src="../carpintero-theme/assets/images/optimized/bio/carpintero.jpg" alt="Retrato del carpintero" loading="lazy">
+                </div>
+                <div class="bio-text">
+                    <p class="eyebrow">Sobre mí</p>
+                    <h2>Un oficio, miles de detalles</h2>
+                    <p>[Mini biografía: experiencia, filosofía, relación con el cliente. 3-4 líneas.]</p>
+                    <a href="sobre-mi.html" class="btn btn-outline">Conoce más</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACTO HOME -->
+        <section id="contacto" class="home-contact">
+            <div class="container" data-reveal>
+                <header class="section-header">
+                    <p class="eyebrow">Hablemos</p>
+                    <h2>Cuéntanos tu proyecto</h2>
+                    <p class="lead">Llámanos o envía el formulario. Respondemos pronto.</p>
+                </header>
+                <div class="contact-quick">
+                    <a data-bind-href="tel:phoneTel" href="#" class="btn btn-primary">Llamar</a>
+                    <a href="contacto.html" class="btn btn-outline">Formulario</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div data-include="footer"></div>
+    <div data-include="cookies-banner"></div>
+</body>
+</html>

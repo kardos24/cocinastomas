@@ -1,0 +1,18 @@
+# Imágenes fuente (162 MB — se regeneran con scripts/resize-images.ps1)
+carpintero-theme/assets/images/gallery/
+
+# WordPress local (no va a git — se instala en cada entorno)
+wordpress-local/
+
+# Herramientas internas
+.claude/
+.agents/
+
+# Sistema operativo
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Editores
+.vscode/settings.json
+*.swp

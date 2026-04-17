@@ -1,0 +1,33 @@
+/* =========================================================
+   Scroll reveal animations.
+   Se activan con el atributo [data-reveal]; el JS añade .is-visible.
+   Respetamos prefers-reduced-motion.
+   ========================================================= */
+
+[data-reveal] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 700ms ease, transform 700ms ease;
+    will-change: opacity, transform;
+}
+[data-reveal].is-visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Variantes opcionales */
+[data-reveal="fade"] { transform: none; }
+[data-reveal="left"] { transform: translateX(-30px); }
+[data-reveal="left"].is-visible { transform: none; }
+[data-reveal="right"] { transform: translateX(30px); }
+[data-reveal="right"].is-visible { transform: none; }
+
+/* Usuarios con preferencia de motion reducido */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+        scroll-behavior: auto !important;
+    }
+    [data-reveal] { opacity: 1; transform: none; }
+}

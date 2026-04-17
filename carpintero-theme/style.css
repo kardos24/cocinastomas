@@ -1,0 +1,17 @@
+/*
+Theme Name: Carpintero Theme
+Theme URI:
+Author:
+Author URI:
+Description: Tema personalizado para la web del carpintero. Diseño minimalista moderno con paleta carbón/crema/dorado y tipografía Playfair Display + Inter.
+Version: 0.1.0
+Requires at least: 6.0
+Tested up to: 6.5
+Requires PHP: 8.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: carpintero
+Tags: custom, business, carpentry, responsive, accessibility-ready
+*/
+
+/* Los estilos reales viven en assets/css/main.css */
