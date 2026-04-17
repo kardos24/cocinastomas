@@ -8,7 +8,7 @@
 <section class="hero-gallery" aria-label="<?php esc_attr_e( 'Galería principal', 'carpintero' ); ?>">
     <div class="hero-slides">
         <?php
-        $hero_images = array( '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg' );
+        $hero_images = array( '06.jpg', '05.jpg', '03.jpg', '04.jpg', '02.jpg', '01.jpg' );
         foreach ( $hero_images as $index => $img ) :
             $src = CARPINTERO_URI . '/assets/images/wp-gallery-ready/hero/' . $img;
         ?>

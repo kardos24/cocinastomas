@@ -22,14 +22,22 @@
 
         <div class="footer-col">
             <h3><?php esc_html_e( 'Secciones', 'carpintero' ); ?></h3>
-            <?php
-            wp_nav_menu( array(
-                'theme_location' => 'footer',
-                'depth'          => 1,
-                'container'      => false,
-                'fallback_cb'    => false,
-            ) );
-            ?>
+            <ul>
+                <?php
+                $footer_links = array(
+                    home_url( '/' )                => __( 'Inicio', 'carpintero' ),
+                    home_url( '/cocinas' )          => __( 'Cocinas', 'carpintero' ),
+                    home_url( '/armarios' )         => __( 'Armarios', 'carpintero' ),
+                    home_url( '/banos' )            => __( 'Baños', 'carpintero' ),
+                    home_url( '/otros-servicios' )  => __( 'Otros servicios', 'carpintero' ),
+                    home_url( '/sobre-mi' )         => __( 'Sobre mí', 'carpintero' ),
+                    home_url( '/contacto' )         => __( 'Contacto', 'carpintero' ),
+                );
+                foreach ( $footer_links as $url => $label ) :
+                ?>
+                    <li><a href="<?php echo esc_url( $url ); ?>"><?php echo esc_html( $label ); ?></a></li>
+                <?php endforeach; ?>
+            </ul>
         </div>
 
         <div class="footer-col">

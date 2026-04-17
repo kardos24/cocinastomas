@@ -379,6 +379,16 @@ Cómo funcionan los componentes:
             - Entorno local Laragon configurado (cocinastomas.test):
                 BD importada desde producción, uploads descargados, tema instalado.
 
+2026-04-18  Mejoras visuales home y footer.
+            - Imágenes de servicios home regeneradas a 1200x800 calidad 95
+              (antes 800x600) para eliminar borrosidad en pantallas HD.
+            - Footer sección "Secciones" reemplaza wp_nav_menu (requería
+              menú configurado en admin) por links hardcodeados: Inicio,
+              Cocinas, Armarios, Baños, Otros servicios, Sobre mí, Contacto.
+            - Hero slider: orden de fotos cambiado a 6, 5, 3, 4, 2, 1.
+            - Imágenes home y wp-gallery-ready copiadas al entorno local Laragon.
+            - Cambios subidos a WebEmpresa por FTP.
+
 2026-04-17  Despliegue en producción (WebEmpresa) + GitHub.
             - Repositorio GitHub creado: https://github.com/kardos24/cocinastomas
             - Instalada la GitHub App de Claude Code con workflows:
