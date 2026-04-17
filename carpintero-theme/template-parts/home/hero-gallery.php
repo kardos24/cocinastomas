@@ -8,15 +8,9 @@
 <section class="hero-gallery" aria-label="<?php esc_attr_e( 'Galería principal', 'carpintero' ); ?>">
     <div class="hero-slides">
         <?php
-        $hero_images = array(
-            'hero-1.jpg',
-            'hero-2.jpg',
-            'hero-3.jpg',
-            'hero-4.jpg',
-            'hero-5.jpg',
-        );
+        $hero_images = array( '01.jpg', '02.jpg', '03.jpg', '04.jpg', '05.jpg' );
         foreach ( $hero_images as $index => $img ) :
-            $src = CARPINTERO_URI . '/assets/images/optimized/hero/' . $img;
+            $src = CARPINTERO_URI . '/assets/images/wp-gallery-ready/hero/' . $img;
         ?>
             <div class="hero-slide<?php echo 0 === $index ? ' is-active' : ''; ?>" style="background-image:url('<?php echo esc_url( $src ); ?>');" role="img" aria-label="<?php esc_attr_e( 'Trabajo destacado', 'carpintero' ); ?>"></div>
         <?php endforeach; ?>

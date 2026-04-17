@@ -14,7 +14,7 @@ function carpintero_meta_tags() {
     $title    = wp_get_document_title();
     $desc     = get_bloginfo( 'description' );
     $url      = is_singular() ? get_permalink() : home_url( add_query_arg( null, null ) );
-    $og_image = CARPINTERO_URI . '/assets/images/optimized/og/og-default.jpg';
+    $og_image = CARPINTERO_URI . '/assets/images/og/og-default.jpg';
 
     if ( is_singular() && has_post_thumbnail() ) {
         $img = wp_get_attachment_image_src( get_post_thumbnail_id(), 'carpintero-hero' );
@@ -44,7 +44,7 @@ function carpintero_local_business_schema() {
         'name'        => get_bloginfo( 'name' ),
         'description' => get_bloginfo( 'description' ),
         'url'         => home_url( '/' ),
-        'image'       => CARPINTERO_URI . '/assets/images/optimized/og/og-default.jpg',
+        'image'       => CARPINTERO_URI . '/assets/images/og/og-default.jpg',
         'telephone'   => '+34609608289',
         'priceRange'  => '€€',
         'address'     => array(

@@ -7,25 +7,25 @@ $services = array(
         'slug'  => 'cocinas',
         'title' => __( 'Cocinas', 'carpintero' ),
         'text'  => __( 'Diseño, fabricación e instalación de cocinas a medida.', 'carpintero' ),
-        'img'   => 'optimized/home/cocina-destacada.jpg',
+        'img'   => 'home/cocina-destacada.jpg',
     ),
     array(
         'slug'  => 'armarios',
         'title' => __( 'Armarios', 'carpintero' ),
         'text'  => __( 'Empotrados, vestidores y correderas al milímetro.', 'carpintero' ),
-        'img'   => 'optimized/home/armario-destacado.jpg',
+        'img'   => 'home/armario-destacado.jpg',
     ),
     array(
         'slug'  => 'banos',
         'title' => __( 'Baños', 'carpintero' ),
         'text'  => __( 'Muebles de baño resistentes y elegantes.', 'carpintero' ),
-        'img'   => 'optimized/home/bano-destacado.jpg',
+        'img'   => 'home/bano-destacado.jpg',
     ),
     array(
-        'slug'  => 'mantenimiento',
+        'slug'  => 'otros-servicios',
         'title' => __( 'Otros servicios', 'carpintero' ),
         'text'  => __( 'Reparación, restauración, ajustes y más.', 'carpintero' ),
-        'img'   => 'optimized/home/mantenimiento-destacado.jpg',
+        'img'   => 'home/mantenimiento-destacado.jpg',
     ),
 );
 ?>

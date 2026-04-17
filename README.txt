@@ -4,9 +4,9 @@ PROYECTO: WEB DEL CARPINTERO
 Documento maestro con el contexto completo del proyecto.
 Se va actualizando según añadimos información y configuraciones.
 
-Última actualización: 2026-04-17
-Fase actual: Preview estática con favicons generados, contenido real en
-otros-servicios y biografía profesional en sobre-mi.
+Última actualización: 2026-04-18
+Versión: 1.0
+Fase actual: PRODUCCIÓN + entorno local activo (Laragon).
 
 
 ----------------------------------------------------------------
@@ -17,8 +17,9 @@ Web corporativa que muestra su trabajo en cuatro especialidades
 (cocinas, armarios, baños y mantenimiento), biografía y sistema
 de contacto (teléfono, WhatsApp, formulario por email).
 
-Hosting final: WebEmpresa (configuración pendiente).
+Hosting: WebEmpresa — ACTIVO en https://cocinastomas.es/
 Plataforma: WordPress con tema personalizado "carpintero-theme".
+Repositorio: https://github.com/kardos24/cocinastomas (rama main)
 Paralelo: carpeta /preview/ con HTML estáticos probables en Live Server.
 
 
@@ -213,10 +214,11 @@ Contenido (lo aporta el cliente / el usuario):
 Configuración técnica:
   [~] Instalar WordPress en entorno local → ver wordpress-local/INSTRUCCIONES.txt
        (WordPress descargado, tema copiado, script de setup listo; falta instalar Laragon).
-  [  ] Subir el tema y activarlo.
+  [OK] Subir el tema y activarlo en producción.
   [  ] Instalar plugins: ACF Pro, WP Mail SMTP, Rank Math, Complianz.
-  [  ] Crear las páginas en WP y asignar templates.
-  [  ] Configurar menú principal y de footer.
+  [OK] Crear las páginas en WP y asignar templates (cocinas, armarios, banos,
+       otros-servicios, sobre-mi, contacto).
+  [OK] Menú de navegación funcional (fallback estático en nav.php).
   [  ] Mapa de Google embebido en la página de Contacto.
   [  ] Configurar SMTP para los envíos de formulario.
   [  ] Sustituir todos los +34 000 000 000 por el teléfono real.
@@ -224,11 +226,12 @@ Configuración técnica:
   [  ] Rellenar Schema.org LocalBusiness con dirección real.
 
 Despliegue (ver docs/deploy-webempresa.md):
-  [  ] Contratar dominio.
-  [  ] Instalar WordPress en WebEmpresa.
-  [  ] Subir tema + plugins.
-  [  ] Migrar contenidos.
+  [OK] Dominio cocinastomas.es activo en WebEmpresa.
+  [OK] WordPress instalado en WebEmpresa (cocinastomas.es).
+  [OK] Tema carpintero-theme subido y activado vía FTP.
+  [OK] cocinastomas.com redirige 301 a cocinastomas.es.
   [  ] SSL, caché, backups.
+  [  ] Configurar SMTP.
 
 
 ----------------------------------------------------------------
@@ -358,3 +361,46 @@ Cómo funcionan los componentes:
               bindings data-bind-text / data-bind-href.
             - Las 7 páginas del preview ya no duplican header/footer/cookies.
               Cambiar el teléfono o el email en config.js se propaga a todo.
+
+2026-04-18  Versión 1.0 — Limpieza, galería completa y entorno local.
+            - Galería completa: procesadas TODAS las imágenes originales a
+              1200x900 JPG en assets/images/wp-gallery-ready/ (106 imágenes:
+              cocinas 58, armarios 23, baños 10, mantenimiento 7, hero 8).
+            - gallery.php actualizado: usa wp-gallery-ready/ con conteos reales.
+            - hero-gallery.php: usa wp-gallery-ready/hero/01-05.jpg.
+            - Rutas de imágenes especiales reorganizadas:
+              bio/, home/, og/ en assets/images/ (eliminada carpeta optimized/).
+            - bio.php home: añadida biografía resumida de Tomás Cardos.
+            - nav.php y services.php: corregida URL /mantenimiento→/otros-servicios.
+            - Limpieza mayor del proyecto:
+                Eliminados: wordpress-local/ (258MB), carpintero-theme.zip (168MB),
+                preview/, optimized/, scripts PHP de despliegue, PDFs de diseño,
+                carpetas vacías (design/mockups, docs/content, before-after/cocinas).
+            - Entorno local Laragon configurado (cocinastomas.test):
+                BD importada desde producción, uploads descargados, tema instalado.
+
+2026-04-17  Despliegue en producción (WebEmpresa) + GitHub.
+            - Repositorio GitHub creado: https://github.com/kardos24/cocinastomas
+            - Instalada la GitHub App de Claude Code con workflows:
+              claude.yml (responde a @claude en PRs/issues) y
+              claude-code-review.yml (revisión automática en PRs).
+            - Proyecto subido a la rama main del repositorio.
+            - Tema carpintero-theme subido por FTP a
+              cocinastomas.es/wp-content/themes/carpintero-theme/ (235 archivos).
+            - Resuelto error 500 por plugins incompatibles con PHP 8.5
+              (cactus-edd-addon, cactus-job, cactus-portfolio, bizhub-sampledata,
+              gantry, revslider, easing-slider, tema business-hub): todos eliminados.
+            - Tema activado directamente en base de datos (wp_options).
+            - Páginas WordPress creadas/corregidas vía DB:
+                contacto (slug contact → contacto)
+                otros-servicios (slug otros-muebles → otros-servicios)
+                banos (nueva)
+                sobre-mi (nueva)
+            - nav.php y services.php: corregida URL hardcodeada
+              /mantenimiento → /otros-servicios.
+            - Limpieza del servidor:
+                Eliminados: danielcardos.es, clinicadentalmula.danielcardos.es
+                Eliminados: todos los plugins
+                Eliminados: temas antiguos (business-hub, twentytwentytwo,
+                  twentytwentyfive, twentytwentyfour)
+            - cocinastomas.com reconvertido a redirect 301 → cocinastomas.es.

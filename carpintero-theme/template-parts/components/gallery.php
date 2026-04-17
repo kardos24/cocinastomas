@@ -10,8 +10,8 @@ $category = $args['category'] ?? '';
 $projects = $category ? carpintero_get_projects( $category ) : array();
 
 $static_counts = array(
-    'cocinas'       => 10,
-    'armarios'      => 10,
+    'cocinas'       => 58,
+    'armarios'      => 23,
     'banos'         => 10,
     'mantenimiento' => 7,
 );
@@ -37,7 +37,7 @@ if ( ! empty( $projects ) ) {
     $alt   = $static_alt[ $category ];
     for ( $i = 1; $i <= $count; $i++ ) {
         $images[] = array(
-            'src' => CARPINTERO_URI . '/assets/images/optimized/' . $category . '/' . sprintf( '%02d.jpg', $i ),
+            'src' => CARPINTERO_URI . '/assets/images/wp-gallery-ready/' . $category . '/' . sprintf( '%02d.jpg', $i ),
             'alt' => $alt . ' ' . $i,
         );
     }

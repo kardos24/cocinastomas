@@ -9,7 +9,7 @@ get_header(); ?>
     <section class="about-hero" data-reveal>
         <div class="container about-grid">
             <div class="about-image">
-                <img src="<?php echo esc_url( CARPINTERO_URI . '/assets/images/optimized/bio/carpintero.jpg' ); ?>"
+                <img src="<?php echo esc_url( CARPINTERO_URI . '/assets/images/bio/carpintero.jpg' ); ?>"
                      alt="<?php esc_attr_e( 'Tomás Cardos, maestro carpintero en Molina de Segura', 'carpintero' ); ?>"
                      loading="lazy">
             </div>

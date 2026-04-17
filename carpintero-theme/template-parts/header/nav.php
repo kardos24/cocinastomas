@@ -34,7 +34,7 @@ function carpintero_nav_fallback() {
         '/cocinas'        => __( 'Cocinas', 'carpintero' ),
         '/armarios'       => __( 'Armarios', 'carpintero' ),
         '/banos'          => __( 'Baños', 'carpintero' ),
-        '/mantenimiento'  => __( 'Otros servicios', 'carpintero' ),
+        '/otros-servicios'  => __( 'Otros servicios', 'carpintero' ),
         '/sobre-mi'       => __( 'Sobre mí', 'carpintero' ),
         '/contacto'       => __( 'Contacto', 'carpintero' ),
     );
