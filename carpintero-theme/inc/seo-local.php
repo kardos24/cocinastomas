@@ -27,7 +27,7 @@ function carpintero_meta_tags() {
     <meta property="og:title" content="<?php echo esc_attr( $title ); ?>">
     <meta property="og:description" content="<?php echo esc_attr( $desc ); ?>">
     <meta property="og:url" content="<?php echo esc_url( $url ); ?>">
-    <meta property="og:site_name" content="<?php bloginfo( 'name' ); ?>">
+    <meta property="og:site_name" content="<?php echo esc_attr( get_bloginfo( 'name' ) ); ?>">
     <meta property="og:image" content="<?php echo esc_url( $og_image ); ?>">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<?php echo esc_attr( $title ); ?>">
@@ -49,9 +49,9 @@ function carpintero_local_business_schema() {
         'priceRange'  => '€€',
         'address'     => array(
             '@type'           => 'PostalAddress',
-            'streetAddress'   => '[Dirección]',
-            'addressLocality' => 'Molina de Segura',
-            'postalCode'      => '[CP]',
+            'streetAddress'   => 'Gran Vía',
+            'addressLocality' => 'Murcia',
+            'postalCode'      => '30500',
             'addressCountry'  => 'ES',
         ),
         'openingHours' => 'Mo-Fr 09:00-18:00',

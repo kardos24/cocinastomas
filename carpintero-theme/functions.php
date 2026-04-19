@@ -17,3 +17,4 @@ require_once CARPINTERO_DIR . '/inc/seo-local.php';
 require_once CARPINTERO_DIR . '/inc/contact-form.php';
 require_once CARPINTERO_DIR . '/inc/accessibility.php';
 require_once CARPINTERO_DIR . '/inc/helpers.php';
+require_once CARPINTERO_DIR . '/inc/smtp.php';

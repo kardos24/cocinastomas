@@ -8,7 +8,8 @@ get_header(); ?>
 <main id="main" class="site-main page-service page-cocinas" role="main">
     <section class="service-hero" data-reveal>
         <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Cocinas', 'carpintero' ); ?></p>
+            <p class="service-hero__category"><?php esc_html_e( 'Cocinas', 'carpintero' ); ?></p>
+            <div class="service-hero__rule" aria-hidden="true"></div>
             <h1><?php esc_html_e( 'Cocinas a medida que se adaptan a tu vida', 'carpintero' ); ?></h1>
             <p class="lead"><?php esc_html_e( 'Diseñamos, fabricamos e instalamos cocinas únicas pensadas para cómo cocinas, ordenas y disfrutas de tu casa.', 'carpintero' ); ?></p>
         </div>
@@ -16,7 +17,7 @@ get_header(); ?>
 
     <section class="service-gallery" data-reveal>
         <div class="container">
-            <?php get_template_part( 'template-parts/components/gallery', null, array( 'category' => 'cocinas' ) ); ?>
+            <?php get_template_part( 'template-parts/components/gallery', null, array( 'category' => 'cocinas', 'thumb_limit' => 0 ) ); ?>
         </div>
     </section>
 

@@ -23,15 +23,4 @@
     }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
 
     items.forEach((el) => obs.observe(el));
-
-    // Hero slider autoplay (se queda aquí por simplicidad)
-    const slides = document.querySelectorAll('.hero-slide');
-    if (slides.length > 1) {
-        let idx = 0;
-        setInterval(() => {
-            slides[idx].classList.remove('is-active');
-            idx = (idx + 1) % slides.length;
-            slides[idx].classList.add('is-active');
-        }, 5000);
-    }
 })();

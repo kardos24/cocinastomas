@@ -8,7 +8,8 @@ get_header(); ?>
 
     <section class="service-hero" data-reveal>
         <div class="container">
-            <p class="eyebrow"><?php esc_html_e( 'Otros servicios', 'carpintero' ); ?></p>
+            <p class="service-hero__category"><?php esc_html_e( 'Otros servicios', 'carpintero' ); ?></p>
+            <div class="service-hero__rule" aria-hidden="true"></div>
             <h1><?php esc_html_e( 'Carpintería a medida para cada rincón de tu espacio', 'carpintero' ); ?></h1>
             <p class="lead"><?php esc_html_e( 'Más allá de cocinas, armarios y baños, la madera tiene presencia en cada parte del hogar. Diseñamos, fabricamos e instalamos cualquier obra de carpintería con la misma exigencia artesanal.', 'carpintero' ); ?></p>
         </div>

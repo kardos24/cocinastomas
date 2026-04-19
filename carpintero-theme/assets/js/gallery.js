@@ -83,5 +83,16 @@
                 dx < 0 ? nextBtn && nextBtn.click() : prevBtn && prevBtn.click();
             }
         }, { passive: true });
+
+        // Botón "Ver más fotos": muestra miniaturas ocultas.
+        const showMoreBtn = slider.querySelector('[data-show-more]');
+        if (showMoreBtn) {
+            showMoreBtn.addEventListener('click', function () {
+                slider.querySelectorAll('.slider-thumb[hidden]').forEach(function (thumb) {
+                    thumb.removeAttribute('hidden');
+                });
+                showMoreBtn.remove();
+            });
+        }
     });
 })();

@@ -63,6 +63,18 @@ function carpintero_render_contact_form() {
             <input type="text" id="cf-website" name="cf_website" tabindex="-1" autocomplete="off">
         </div>
 
+        <!-- Captcha: verificación humana -->
+        <div class="field field-captcha">
+            <?php
+            $captcha_token = wp_create_nonce( 'carpintero_captcha' );
+            ?>
+            <input type="hidden" name="cf_captcha_token" value="<?php echo esc_attr( $captcha_token ); ?>">
+            <label class="captcha-label">
+                <input type="checkbox" name="cf_human" value="1" required>
+                <span><?php esc_html_e( 'Soy humano', 'carpintero' ); ?></span>
+            </label>
+        </div>
+
         <button type="submit" class="btn btn-primary">
             <?php esc_html_e( 'Enviar', 'carpintero' ); ?>
         </button>
@@ -78,6 +90,23 @@ function carpintero_handle_contact_form() {
     if ( 'POST' !== $_SERVER['REQUEST_METHOD'] ) return;
     if ( empty( $_POST['carpintero_contact_nonce'] ) ) return;
     if ( ! wp_verify_nonce( $_POST['carpintero_contact_nonce'], 'carpintero_contact' ) ) return;
+
+    // Rate limiting: máximo 5 envíos por IP por hora.
+    $ip      = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : 'unknown';
+    $rl_key  = 'carpintero_rl_' . md5( $ip );
+    $rl_count = (int) get_transient( $rl_key );
+    if ( $rl_count >= 5 ) {
+        wp_safe_redirect( add_query_arg( 'error', 'limite', wp_get_referer() ) );
+        exit;
+    }
+    set_transient( $rl_key, $rl_count + 1, HOUR_IN_SECONDS );
+
+    // Captcha: verificar token y checkbox.
+    $captcha_token = isset( $_POST['cf_captcha_token'] ) ? sanitize_text_field( wp_unslash( $_POST['cf_captcha_token'] ) ) : '';
+    if ( ! wp_verify_nonce( $captcha_token, 'carpintero_captcha' ) || empty( $_POST['cf_human'] ) ) {
+        wp_safe_redirect( add_query_arg( 'error', 'captcha', wp_get_referer() ) );
+        exit;
+    }
 
     // Honeypot: si viene relleno, descartamos silenciosamente.
     if ( ! empty( $_POST['cf_website'] ) ) {
@@ -97,7 +126,7 @@ function carpintero_handle_contact_form() {
         exit;
     }
 
-    $to      = get_option( 'admin_email' );
+    $to      = 'tomas@cocinastomas.com';
     $subject = sprintf( '[Web] Nuevo contacto - %s', $name );
     $body    = "Nombre: $name\nEmail: $email\nTeléfono: $phone\nServicio: $service\n\nMensaje:\n$message";
     $headers = array(

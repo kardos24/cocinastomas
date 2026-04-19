@@ -72,20 +72,37 @@ if ( empty( $images ) ) : ?>
         </button>
     </div>
 
+    <?php
+    $thumb_limit = isset( $args['thumb_limit'] ) ? (int) $args['thumb_limit'] : 24;
+    $total       = count( $images );
+    $has_more    = $thumb_limit > 0 && $total > $thumb_limit;
+    ?>
     <div class="slider-thumbs-wrap">
-        <?php foreach ( $images as $idx => $img ) : ?>
+        <?php foreach ( $images as $idx => $img ) :
+            $hidden = $has_more && $idx >= $thumb_limit ? ' hidden' : '';
+        ?>
             <button
                 class="slider-thumb<?php echo $idx === 0 ? ' is-active' : ''; ?>"
                 data-idx="<?php echo $idx; ?>"
                 data-src="<?php echo esc_url( $img['src'] ); ?>"
                 data-alt="<?php echo esc_attr( $img['alt'] ); ?>"
                 aria-label="<?php printf( esc_attr__( 'Ver foto %d', 'carpintero' ), $idx + 1 ); ?>"
-                aria-pressed="<?php echo $idx === 0 ? 'true' : 'false'; ?>">
+                aria-pressed="<?php echo $idx === 0 ? 'true' : 'false'; ?>"
+                <?php echo $hidden; ?>>
                 <img src="<?php echo esc_url( $img['src'] ); ?>"
                      alt=""
                      loading="lazy">
             </button>
         <?php endforeach; ?>
     </div>
+
+    <?php if ( $has_more ) : ?>
+        <button class="gallery-show-more" data-show-more aria-expanded="false">
+            <?php printf(
+                esc_html__( 'Ver más fotos (%d)', 'carpintero' ),
+                $total - $thumb_limit
+            ); ?>
+        </button>
+    <?php endif; ?>
 
 </div>

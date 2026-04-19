@@ -1,5 +1,5 @@
 /**
- * main.js — navegación móvil, scroll suave, banner de cookies.
+ * main.js — navegación móvil, scroll suave, banner de cookies, hero slider.
  */
 (function () {
     'use strict';
@@ -38,5 +38,44 @@
                 banner.hidden = true;
             });
         });
+    }
+
+    // --- Hero slider ---
+    const slides = document.querySelectorAll('.hero-slide');
+    if (slides.length > 1) {
+        const reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (reduced) {
+            // Sin animación: mostrar primera slide estáticamente.
+            return;
+        }
+
+        let idx = 0;
+        let timer = null;
+        const heroSection = document.querySelector('.hero-gallery');
+
+        function next() {
+            slides[idx].classList.remove('is-active');
+            idx = (idx + 1) % slides.length;
+            slides[idx].classList.add('is-active');
+        }
+
+        function start() {
+            if (!timer) timer = setInterval(next, 5000);
+        }
+
+        function pause() {
+            clearInterval(timer);
+            timer = null;
+        }
+
+        start();
+
+        // Pausa en hover y cuando el foco entra en la sección.
+        if (heroSection) {
+            heroSection.addEventListener('mouseenter', pause);
+            heroSection.addEventListener('mouseleave', start);
+            heroSection.addEventListener('focusin',   pause);
+            heroSection.addEventListener('focusout',  start);
+        }
     }
 })();
