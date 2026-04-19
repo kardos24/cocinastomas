@@ -299,7 +299,8 @@ Cómo funcionan los componentes:
     CARPINTERO_VERSION = "0.1.0"
     CARPINTERO_DIR     = path al tema
     CARPINTERO_URI     = URL al tema
-- El formulario usa wp_mail() y la dirección de admin_email.
+- El formulario usa wp_mail() y envía a tomas@cocinastomas.com.
+    Ese buzón tiene configurado reenvío automático a tomascocinas@hotmail.com.
   Para producción: instalar WP Mail SMTP con el SMTP de WebEmpresa.
 - Los tamaños de imagen "carpintero-*" se registran en theme-setup.php.
 - Compatible con Yoast/RankMath: si están activos, el SEO custom se
